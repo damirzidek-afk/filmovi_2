@@ -9,7 +9,7 @@ def učitaj_podatke():
     podaci_računa=dict(st.secrets["gcp_service_account"])
     klijent=gspread.service_account_from_dict(podaci_računa)
     tablica=klijent.open("FILMOVI")
-    radni_list=tablica.worksheet("fimovi")
+    radni_list=tablica.worksheet("filmovi")
     podaci=radni_list.get_all_records()
     filmovi=pd.DataFrame(podaci)
     return filmovi, radni_list
