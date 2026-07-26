@@ -133,7 +133,7 @@ else:
 
 st.subheader("Top 3 filma po ocjeni")
 
-if filmovi.empty():
+if filmovi.empty:
     st.info("Nema filmova za prikaz.")
 
 else:
