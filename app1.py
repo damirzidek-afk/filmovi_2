@@ -26,7 +26,7 @@ if not filmovi.empty:
     )
 
     filmovi["Ocijena"]=pd.to_numeric(
-        filmovi["Ocijena"],
+        filmovi["Ocjena"],
         errors="coerce"
     )
 
